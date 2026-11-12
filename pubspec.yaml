@@ -1,0 +1,47 @@
+name: finto_flutter
+description: Finto - app de finanzas personales (version Flutter para el Parcial 2).
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.5.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # Estado
+  provider: ^6.1.2
+
+  # Persistencia local
+  sqflite: ^2.4.1
+  path: ^1.9.0
+  path_provider: ^2.1.5
+  shared_preferences: ^2.3.3
+
+  # Hardware
+  image_picker: ^1.1.2        # Camara y galeria
+  speech_to_text: ^7.0.0      # Dictado por voz
+  geolocator: ^13.0.2         # GPS
+  local_auth: ^2.3.0          # Login biometrico
+
+  # Mapa y enlaces externos
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+  url_launcher: ^6.3.1
+
+  # Utilidades
+  crypto: ^3.0.6
+  intl: any                   # la version la fija flutter_localizations
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
